@@ -4,8 +4,7 @@ module.exports = function(sequelize, DataTypes) {
   return sequelize.define('accountDetails', {
     accountId: {
       type: DataTypes.INTEGER(11),
-        allowNull: false,
-        primaryKey: true
+      allowNull: false
     },
     firstName: {
       type: DataTypes.STRING(45),

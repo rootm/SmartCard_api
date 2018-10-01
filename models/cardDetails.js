@@ -1,8 +1,8 @@
 /* jshint indent: 2 */
 
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('customerJourney', {
-    journeyId: {
+  return sequelize.define('cardDetails', {
+    cardId: {
       type: DataTypes.INTEGER(11),
       allowNull: false,
       primaryKey: true
@@ -15,39 +15,31 @@ module.exports = function(sequelize, DataTypes) {
         key: 'accountid'
       }
     },
-    routeId: {
+    pin: {
       type: DataTypes.INTEGER(11),
-      allowNull: false,
-      references: {
-        model: 'busDetails',
-        key: 'routeid'
-      }
-    },
-    startStation: {
-      type: DataTypes.STRING(20),
       allowNull: false
     },
-    endStation: {
-      type: DataTypes.STRING(20),
-      allowNull: false
-    },
-      date: {
-          type: DataTypes.DATE,
-          allowNull: false
-      },
-    startTime: {
+    dateIssued: {
       type: DataTypes.DATEONLY,
       allowNull: false
     },
-    endTime: {
-      type: DataTypes.DATEONLY,
-      allowNull: false
-    },
-    cost: {
+    balance: {
       type: "DOUBLE",
+      allowNull: false
+    },
+    onLoan: {
+      type: DataTypes.INTEGER(4),
+      allowNull: false
+    },
+    expireDate: {
+      type: DataTypes.DATEONLY,
+      allowNull: false
+    },
+    tempory: {
+      type: DataTypes.INTEGER(4),
       allowNull: false
     }
   }, {
-    tableName: 'customerJourney'
+    tableName: 'cardDetails'
   });
 };
