@@ -36,9 +36,9 @@ var AccountController = function() {
         })
     }
 
-    this.authenticate = (data) => {
+    this.authenticate = (userName,password) => {
         return new Promise((resolve, reject) => {
-            sequalize.accountDetails.findByOne({where:{ identificationNo: data.userName , password: data.password}}).then(user => {
+            sequalize.accountDetails.findOne({where:{ identificationNo : userName , password : password}}).then(user => {
                 resolve({status: 200, data: user});
             }).catch(err => {
                 reject({status: 500, message: "Error: " + err});

@@ -28,8 +28,8 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.post('/authenticate/', (req, res) => {
-    Controller.authenticate(req.body).then(data => {
+router.get('/authenticate/:userName/:password', (req, res) => {
+    Controller.authenticate(req.params.userName,req.params.password).then(data => {
         res.status(data.status).send({data: data.data});
     }).catch(err => {
         res.status(err.status).send({message: err.message});
