@@ -36,6 +36,15 @@ var AccountController = function() {
         })
     }
 
+    this.authentucate = (data) => {
+        return new Promise((resolve, reject) => {
+            sequalize.accountDetails.findByOne({where:{ identificationNo: data.userName , password: data.password}}).then(user => {
+                resolve({status: 200, data: user});
+            }).catch(err => {
+                reject({status: 500, message: "Error: " + err});
+            })
+        })
+    }
 
 };
 module.exports = new AccountController();
