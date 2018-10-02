@@ -14,7 +14,7 @@ app.use(Cors());
 app.use('/',Routes);
 
 
-app.listen(port,'localhost', (error) => {
+app.listen(port, (error) => {
     if (error){
         console.log(error);
         process.exit(-1);
