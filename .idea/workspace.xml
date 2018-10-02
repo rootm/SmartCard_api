@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95abbe6c-78fd-49a7-80ca-4f2adfc0abde" name="Default Changelist" comment="" />
+    <list default="true" id="95abbe6c-78fd-49a7-80ca-4f2adfc0abde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -36,14 +38,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="834" />
+          <entry key="js" value="857" />
           <entry key="json" value="131" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="131" />
-          <entry key="JavaScript" value="834" />
+          <entry key="JavaScript" value="857" />
         </counts>
       </usages-collector>
     </session>
@@ -71,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
@@ -80,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Journey/Journey.Route.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
@@ -131,10 +133,10 @@
         <option value="$PROJECT_DIR$/src/Account/Account.Route.js" />
         <option value="$PROJECT_DIR$/src/Account/Account.Controller.js" />
         <option value="$PROJECT_DIR$/src/Card/CardDetails.Controller.js" />
-        <option value="$PROJECT_DIR$/Routes.js" />
         <option value="$PROJECT_DIR$/src/Card/CardDetails.Route.js" />
         <option value="$PROJECT_DIR$/src/Journey/Journey.Controller.js" />
         <option value="$PROJECT_DIR$/src/Journey/Journey.Route.js" />
+        <option value="$PROJECT_DIR$/Routes.js" />
       </list>
     </option>
   </component>
@@ -267,12 +269,12 @@
       <workItem from="1538388235823" duration="293000" />
       <workItem from="1538405150473" duration="3631000" />
       <workItem from="1538415127052" duration="1727000" />
-      <workItem from="1538452557288" duration="1202000" />
+      <workItem from="1538452557288" duration="1339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18708000" />
+    <option name="totallyTimeSpent" value="18845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -422,13 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Card/CardDetails.Route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -464,6 +459,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
