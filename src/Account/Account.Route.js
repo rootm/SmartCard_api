@@ -4,7 +4,7 @@ var Controller  = require('./Account.Controller');
 
 
 
-router.put('/:id', (req, res) => {
+router.post('/:id', (req, res) => {
     Controller.update(req.params.id, req.body).then(data => {
         res.status(data.status).send({message: data.message});
     }).catch(err => {
@@ -28,7 +28,13 @@ router.get('/:id', (req, res) => {
     });
 });
 
-
+router.post('/authenticate/', (req, res) => {
+    Controller.authenticate(req.body).then(data => {
+        res.status(data.status).send({data: data.data});
+    }).catch(err => {
+        res.status(err.status).send({message: err.message});
+    });
+});
 
 
 

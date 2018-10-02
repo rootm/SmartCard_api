@@ -2,7 +2,7 @@ var express     = require('express');
 var router      = express.Router();
 var Controller  = require('./CardDetails.Controller');
 
-router.put('/addCredit/:id', (req, res) => {
+router.post('/addCredit/:id', (req, res) => {
     Controller.updateBalance(req.params.id, req.body).then(data => {
         res.status(data.status).send({message: data.message});
     }).catch(err => {
@@ -10,7 +10,7 @@ router.put('/addCredit/:id', (req, res) => {
     })
 });
 
-router.put('/getLoan/:id', (req, res) => {
+router.post('/getLoan/:id', (req, res) => {
     Controller.getLoan(req.params.id, req.body).then(data => {
         res.status(data.status).send({message: data.message});
     }).catch(err => {

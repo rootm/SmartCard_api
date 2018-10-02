@@ -2,7 +2,7 @@ var express     = require('express');
 var router      = express.Router();
 var Controller  = require('./Journey.Controller');
 
-router.put('/', (req, res) => {
+router.post('/', (req, res) => {
     console.log(req.body);
     Controller.addJourney(req.body).then(data => {
         res.status(data.status).send({message: data.message});
