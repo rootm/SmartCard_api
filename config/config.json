@@ -1,0 +1,36 @@
+{
+  "development": {
+    "username": "Muvi@csse-project",
+    "password": "Tharanga@11",
+    "database": "csse_db",
+    "host": "csse-project.mysql.database.azure.com",
+    "dialect": "mysql",
+
+    "connectRetries": 5,
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "idle": 20000,
+      "acquire":20000,
+
+      "evict":60000
+
+
+    }
+
+  },
+  "test": {
+    "username": "csse_root",
+    "password": "root@11@1",
+    "database": "csse_db",
+    "host": "db4free.net",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "csse_root",
+    "password": "root@11@1",
+    "database": "csse_db",
+    "host": "db4free.net",
+    "dialect": "mysql"
+  }
+}
