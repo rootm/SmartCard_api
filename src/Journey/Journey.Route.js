@@ -3,6 +3,7 @@ var router      = express.Router();
 var Controller  = require('./Journey.Controller');
 
 router.put('/', (req, res) => {
+    console.log(req.body);
     Controller.addJourney(req.body).then(data => {
         res.status(data.status).send({message: data.message});
     }).catch(err => {

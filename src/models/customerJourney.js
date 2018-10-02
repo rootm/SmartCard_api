@@ -5,6 +5,7 @@ module.exports = function(sequelize, DataTypes) {
     journeyId: {
       type: DataTypes.INTEGER(11),
       allowNull: false,
+        autoIncrement: true,
       primaryKey: true
     },
     accountId: {
@@ -36,11 +37,11 @@ module.exports = function(sequelize, DataTypes) {
           allowNull: false
       },
     startTime: {
-      type: DataTypes.DATEONLY,
+      type: DataTypes.STRING(20),
       allowNull: false
     },
     endTime: {
-      type: DataTypes.DATEONLY,
+      type: DataTypes.STRING(20),
       allowNull: false
     },
     cost: {

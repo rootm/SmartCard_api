@@ -7,17 +7,20 @@ var CardController = function() {
         return new Promise((resolve, reject) => {
             journeys.create(
                 {
+
                     accountId: data.accountId,
                     routeId: data.routeId,
-                    startStation: data.start,
-                    endStation: data.end,
+                    startStation: data.startStation,
+                    endStation: data.endStation,
                     date: data.date,
                     startTime: data.startTime,
                     endTime: data.endTime,
-                    cost: data.cost
+                    cost: data.cost,
+                    createdAt: null,
+                    updatedAt: null
                 }
             ).then(() => {
-                resolve({status: 200, message: "Successfully updated Balance"});
+                resolve({status: 200, message: "Successfully added Journey"});
             }).catch(err => {
                 reject({status: 500, message: "Error:- " + err});
             })
