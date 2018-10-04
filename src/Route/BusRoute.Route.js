@@ -1,11 +1,11 @@
 var express     = require('express');
 var router      = express.Router();
-var Controller  = require('./Route.Controller');
+var Controller  = require('./BusRoute.Controller');
 
 router.get('/', (req, res) => {
     //console.log(req.body);
     Controller.getRoutes().then(data => {
-        res.status(data.status).send({message: data.message});
+        res.status(data.status).send({message: data.data});
     }).catch(err => {
         res.status(err.status).send({message: err.message});
     })
