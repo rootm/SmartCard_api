@@ -21,6 +21,14 @@ router.get('/bus/:id', (req, res) => {
     });
 });
 
+router.get('/stations/:id', (req, res) => {
+    Controller.getRouteStations(req.params.id).then(data => {
+        res.status(data.status).send({data: data.data});
+    }).catch(err => {
+        res.status(err.status).send({message: err.message});
+    });
+});
+
 
 
 
