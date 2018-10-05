@@ -7,7 +7,6 @@ var CardController = function() {
         return new Promise((resolve, reject) => {
             journeys.create(
                 {
-
                     accountId: data.accountId,
                     routeId: data.routeId,
                     startStation: data.startStation,
@@ -15,14 +14,12 @@ var CardController = function() {
                     date: data.date,
                     startTime: data.startTime,
                     endTime: data.endTime,
-                    cost: data.cost,
-                    createdAt: null,
-                    updatedAt: null
+                    cost: data.cost
                 }
             ).then(() => {
                 resolve({status: 200, message: "Successfully added Journey"});
             }).catch(err => {
-                reject({status: 500, message: "Error:- " + err});
+                reject({status: 500, message: "Error:" + err});
             })
         })
     }
@@ -33,7 +30,7 @@ var CardController = function() {
             journeys.findAll({where: {accountId: id}}).then(journey => {
                 resolve({status: 200, data: journey});
             }).catch(err => {
-                reject({status: 500, message: "Error:- " + err});
+                reject({status: 500, message: "Error:" + err});
             })
         })
     }
